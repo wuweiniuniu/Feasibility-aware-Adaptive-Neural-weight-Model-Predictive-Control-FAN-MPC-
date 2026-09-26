@@ -8,7 +8,7 @@ This repository provides the source code, dataset files, and demonstration video
 
 The `code` folder contains the MATLAB scripts and Simulink files used in this project.
 
-In particular, `PGA_MPC_MODEL.slx` is the Simulink controller model of the proposed PGA-MPC-based control method.
+In particular, `FAN-MPC_MODEL.slx` is the Simulink controller model of the proposed PGA-MPC-based control method.
 
 ## Dataset
 
