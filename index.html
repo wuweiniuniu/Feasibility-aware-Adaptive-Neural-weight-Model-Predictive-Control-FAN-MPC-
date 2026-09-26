@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hierarchical Adaptive Stability–Energy Control for Distributed-Drive Electric Vehicles on Continuous Curved Roads</title>
-  <meta name="description" content="Project page for Hierarchical Adaptive Stability–Energy Control for Distributed-Drive Electric Vehicles on Continuous Curved Roads." />
+  <title>FAN-MPC | Feasibility-aware Adaptive Neural-weight Model Predictive Control</title>
+  <meta name="description" content="FAN-MPC: feasibility-aware neural-weight scheduling and constrained LTV-MPC for stability and energy torque allocation. Watch mild and extreme curved-road demonstrations." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,20 +13,18 @@
 <body>
   <main class="page">
     <section class="hero">
-      <h1>
-        Hierarchical Adaptive Stability–Energy Control for<br />
-        Distributed-Drive Electric Vehicles on Continuous<br class="desktop-break" />
-        Curved Roads
-      </h1>
+      <h1>FAN-MPC</h1>
+      <p class="section-intro">Feasibility-aware Adaptive Neural-weight Model Predictive Control</p>
+      <p class="section-intro">Hierarchical Adaptive Stability–Energy Torque Allocation for Distributed-Drive Electric Vehicles on Continuous Curved Roads</p>
 
       <div class="button-row" aria-label="project links">
         <a class="btn disabled" href="#release-note" aria-disabled="true">📄 Paper</a>
 
-        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/code" target="_blank" rel="noopener">
+        <a class="btn" href="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/tree/main/code" target="_blank" rel="noopener">
           🐙 Code
         </a>
 
-        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/dataset" target="_blank" rel="noopener">
+        <a class="btn" href="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/tree/main/dataset" target="_blank" rel="noopener">
           🗄️ Dataset
         </a>
       </div>
@@ -43,31 +41,31 @@
         The following videos demonstrate the closed-loop vehicle control performance under different continuous curved-road conditions.
       </p>
 
-      <div class="video-card">
+      <div class="video-card" id="mild-condition">
         <h3>Mild Condition</h3>
 
-        <video controls preload="metadata">
-          <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" type="video/mp4" />
+        <video controls playsinline preload="metadata">
+          <source src="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/releases/download/video_pages/mild_condition.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <p class="section-intro">
-          <a href="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" target="_blank" rel="noopener">
+          <a href="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/releases/download/video_pages/mild_condition.mp4" target="_blank" rel="noopener">
             Open Mild Condition Video
           </a>
         </p>
       </div>
 
-      <div class="video-card">
+      <div class="video-card" id="extreme-condition">
         <h3>Extreme Condition</h3>
 
-        <video controls preload="metadata">
-          <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" type="video/mp4" />
+        <video controls playsinline preload="metadata">
+          <source src="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/releases/download/video_pages/extreme_condition.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <p class="section-intro">
-          <a href="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" target="_blank" rel="noopener">
+          <a href="https://github.com/wuweiniuniu/Feasibility-aware-Adaptive-Neural-weight-Model-Predictive-Control-FAN-MPC-/releases/download/video_pages/extreme_condition.mp4" target="_blank" rel="noopener">
             Open Extreme Condition Video
           </a>
         </p>
@@ -78,8 +76,8 @@
       <article class="info-card">
         <h2>Overview</h2>
         <p>
-          This project page presents a hierarchical adaptive stability–energy control framework for distributed-drive electric vehicles on continuous curved roads.
-          The provided files include MATLAB scripts, a Simulink controller model, dataset files, and demonstration videos.
+          FAN-MPC coordinates stability and energy-efficient torque allocation on continuous curved roads with varying adhesion. The upper layer generates nominal torque references inside a physically admissible motor and tire-force region.
+          Offline Bayesian optimization supplies feasible near-optimal weight labels. Five target-specific RBF neural predictors schedule bounded, smoothed MPC priorities from current and preview road conditions. The constrained lower-layer LTV-MPC—not the neural network—computes the final four-wheel torque commands.
         </p>
       </article>
 
